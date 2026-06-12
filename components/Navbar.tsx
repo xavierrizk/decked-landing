@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-const APP_URL = "https://decked-app.onrender.com";
+const APP_URL = "https://decked-frontend.onrender.com";
 
 export default function Navbar() {
   return (

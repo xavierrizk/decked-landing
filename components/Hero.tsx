@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 
-const APP_URL = "https://decked-app.onrender.com";
+const APP_URL = "https://decked-frontend.onrender.com";
 
 const floatingCards = [
   { title: "Ben UFO at Fabric", rating: "★★★★★", delay: 0 },

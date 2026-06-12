@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { Globe, Share2 } from "lucide-react";
 
-const APP_URL = "https://decked-app.onrender.com";
+const APP_URL = "https://decked-frontend.onrender.com";
 
 export default function Footer() {
   return (
