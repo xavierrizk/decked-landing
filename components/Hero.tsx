@@ -4,10 +4,16 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import Turntable from "./Turntable";
+import { useStats, fmtStat } from "@/lib/useStats";
 
 const APP_URL = "https://decked-frontend.onrender.com";
 
 export default function Hero() {
+  const stats = useStats();
+  const statsLine = stats
+    ? `${fmtStat(stats.totalUsers)} Music Lovers · ${fmtStat(stats.totalEvents)} Live Events Rated · Free Forever`
+    : "Free Forever";
+
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden pt-16">
       {/* Grid background */}
@@ -93,7 +99,7 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="text-sm text-gray-600"
           >
-            50k+ Music Lovers · 1000+ Live Events Rated · Free Forever
+            {statsLine}
           </motion.p>
         </div>
 

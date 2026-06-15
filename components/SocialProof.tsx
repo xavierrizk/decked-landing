@@ -1,12 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-
-const stats = [
-  { number: "50k+", label: "Music Lovers" },
-  { number: "1000+", label: "Live Events Rated" },
-  { number: "Free", label: "Forever" },
-];
+import { useStats, fmtStat } from "@/lib/useStats";
 
 const testimonials = [
   {
@@ -33,30 +28,44 @@ const testimonials = [
 ];
 
 export default function SocialProof() {
+  const stats = useStats();
+
+  // Real, live numbers — rendered only once loaded (never fake fallbacks)
+  const boxes = stats
+    ? [
+        { number: fmtStat(stats.totalUsers),   label: "Music Lovers" },
+        { number: fmtStat(stats.totalEvents),  label: "Live Events" },
+        { number: fmtStat(stats.totalReviews), label: "Reviews Written" },
+        { number: fmtStat(stats.totalDJs),     label: "Verified Artists" },
+      ]
+    : [];
+
   return (
     <section className="py-24 px-4 sm:px-6 max-w-7xl mx-auto">
-      {/* Stats */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5 }}
-        className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-20"
-      >
-        {stats.map((stat, i) => (
-          <motion.div
-            key={i}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.4, delay: i * 0.1 }}
-            className="text-center bg-[#111114] border border-white/[0.07] rounded-2xl p-8"
-          >
-            <div className="text-4xl font-black text-white mb-2">{stat.number}</div>
-            <div className="text-gray-500 text-sm">{stat.label}</div>
-          </motion.div>
-        ))}
-      </motion.div>
+      {/* Stats — only shown when real data has loaded */}
+      {boxes.length > 0 && (
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-20"
+        >
+          {boxes.map((stat, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: i * 0.1 }}
+              className="text-center bg-[#111114] border border-white/[0.07] rounded-2xl p-8"
+            >
+              <div className="text-4xl font-black text-white mb-2">{stat.number}</div>
+              <div className="text-gray-500 text-sm">{stat.label}</div>
+            </motion.div>
+          ))}
+        </motion.div>
+      )}
 
       {/* Testimonials heading */}
       <motion.div
