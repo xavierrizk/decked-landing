@@ -1,44 +1,44 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Star, Users, Compass, MessageCircle, BadgeCheck, Zap } from "lucide-react";
+import { Star, MapPin, MessageCircle, Heart, Users, Globe } from "lucide-react";
 
 const features = [
   {
     icon: Star,
-    title: "Rate Sets",
+    title: "Rate Everything",
     description:
-      "Give 1–5 stars to DJ sets. Your ratings help surface the best nights to the community.",
+      "Concerts, festivals, DJ sets, live bands, raves — if it's live, you can rate it.",
   },
   {
-    icon: Users,
-    title: "Follow DJs",
+    icon: MapPin,
+    title: "Find What's Next",
     description:
-      "Keep up with your favourite artists and never miss a set worth rating.",
-  },
-  {
-    icon: Compass,
-    title: "Discover Music",
-    description:
-      "Explore trending sets, top-rated DJs, and hidden gems from the global underground.",
+      "Discover live music events happening in your city and beyond.",
   },
   {
     icon: MessageCircle,
-    title: "Community Reviews",
+    title: "Share Your Taste",
     description:
-      "Leave detailed reviews, read opinions from other ravers, spark conversations.",
+      "Review and discuss live music experiences with people who were there.",
   },
   {
-    icon: BadgeCheck,
-    title: "Verified DJs",
+    icon: Heart,
+    title: "Follow What You Love",
     description:
-      "Blue-tick verified artists you can trust. Applied for and reviewed by our team.",
+      "Keep up with your favorite artists and the events you don't want to miss.",
   },
   {
-    icon: Zap,
-    title: "Live Activity Feed",
+    icon: Users,
+    title: "Community Driven",
     description:
-      "See what your friends are rating in real time. Discover sets through people you trust.",
+      "Real fans rating real experiences — honest ratings you can actually trust.",
+  },
+  {
+    icon: Globe,
+    title: "For Everyone",
+    description:
+      "Whether you're into EDM, rock, hip-hop, concerts, or festivals — it's all here.",
   },
 ];
 
@@ -53,10 +53,10 @@ export default function Features() {
         className="text-center mb-16"
       >
         <h2 className="text-3xl md:text-5xl font-black tracking-tight text-white mb-4">
-          Everything You Need to Rate the Night
+          Everything You Need to Rate Live Music
         </h2>
         <p className="text-gray-400 text-lg max-w-xl mx-auto">
-          Built from the ground up for the rave community.
+          Built for everyone who loves a live show.
         </p>
       </motion.div>
 

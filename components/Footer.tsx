@@ -19,7 +19,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-gray-500 text-sm leading-relaxed mb-6">
-              Rate the sets that decked you.
+              Rate the live music that moves you.
             </p>
             <p className="text-gray-700 text-xs">
               © {new Date().getFullYear()} Decked. All rights reserved.

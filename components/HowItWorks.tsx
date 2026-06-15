@@ -5,31 +5,24 @@ import { motion } from "framer-motion";
 const steps = [
   {
     number: "1",
-    emoji: "🎵",
-    title: "Create Your Account",
+    emoji: "🎤",
+    title: "Went to a concert?",
     description:
-      "Sign up free in 30 seconds. No DJ knowledge required — just a love for good music.",
+      "Rate it on Decked. Score the night, write a review, and remember every show you've been to.",
   },
   {
     number: "2",
-    emoji: "🔍",
-    title: "Browse & Discover",
+    emoji: "🎪",
+    title: "Checking the Coachella lineup?",
     description:
-      "Explore DJ profiles, search for sets, find artists from your favourite clubs and festivals.",
+      "See what the community recommends. Find the must-see sets before you go.",
   },
   {
     number: "3",
-    emoji: "⭐",
-    title: "Rate & Review",
+    emoji: "🎧",
+    title: "Found an amazing DJ set?",
     description:
-      "Leave star ratings and written reviews on any set. Build your taste profile.",
-  },
-  {
-    number: "4",
-    emoji: "👥",
-    title: "Connect & Follow",
-    description:
-      "Follow DJs and friends. See their ratings, discover sets through their activity.",
+      "Share it with music fans worldwide and help the best performances rise to the top.",
   },
 ];
 
@@ -48,15 +41,15 @@ export default function HowItWorks() {
             How Decked Works
           </h2>
           <p className="text-gray-400 text-lg">
-            Four simple steps to your next favourite set.
+            However you experience live music.
           </p>
         </motion.div>
 
         <div className="relative">
           {/* Dashed connector line (desktop) */}
-          <div className="hidden md:block absolute top-10 left-[12.5%] right-[12.5%] h-px border-t-2 border-dashed border-purple-800/40 z-0" />
+          <div className="hidden md:block absolute top-10 left-[16.67%] right-[16.67%] h-px border-t-2 border-dashed border-purple-800/40 z-0" />
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-10 relative z-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 relative z-10">
             {steps.map((step, i) => (
               <motion.div
                 key={i}

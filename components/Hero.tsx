@@ -35,7 +35,7 @@ export default function Hero() {
             className="inline-flex items-center gap-2 border border-purple-500/30 bg-purple-500/10 text-purple-300 text-sm px-4 py-1.5 rounded-full mb-8"
           >
             <span>✦</span>
-            <span>Built for ravers, by ravers</span>
+            <span>For every kind of live music</span>
           </motion.div>
 
           {/* H1 */}
@@ -45,11 +45,11 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-5xl md:text-7xl font-black tracking-tight leading-tight mb-6"
           >
-            Rate the Sets That{" "}
+            Rate the{" "}
             <span className="bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent">
-              Decked
+              live music
             </span>{" "}
-            You
+            that moves you
           </motion.h1>
 
           {/* Subheadline */}
@@ -59,8 +59,8 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-xl text-gray-400 max-w-2xl mb-10"
           >
-            Discover, rate, and share your favorite DJ sets with a community of
-            ravers.
+            Discover concerts, festivals, raves, and DJ sets. Share your
+            experience with a community of music lovers.
           </motion.p>
 
           {/* CTA buttons */}
@@ -74,14 +74,14 @@ export default function Hero() {
               href={APP_URL}
               className="flex items-center gap-2 bg-purple-600 hover:bg-purple-700 text-white font-bold px-8 py-4 rounded-xl text-lg transition-all hover:scale-105 shadow-lg shadow-purple-900/30"
             >
-              Join Decked — It&apos;s Free
+              Explore Free
               <ArrowRight className="w-5 h-5" />
             </Link>
             <Link
               href={APP_URL}
               className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors text-lg"
             >
-              Explore Sets
+              Browse Live Music
               <ArrowRight className="w-4 h-4" />
             </Link>
           </motion.div>
@@ -93,7 +93,7 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="text-sm text-gray-600"
           >
-            500+ Sets Rated · 100+ DJs · Free Forever
+            50k+ Music Lovers · 1000+ Live Events Rated · Free Forever
           </motion.p>
         </div>
 

@@ -3,29 +3,29 @@
 import { motion } from "framer-motion";
 
 const stats = [
-  { number: "100+", label: "DJs on Decked" },
-  { number: "500+", label: "Sets Rated" },
+  { number: "50k+", label: "Music Lovers" },
+  { number: "1000+", label: "Live Events Rated" },
   { number: "Free", label: "Forever" },
 ];
 
 const testimonials = [
   {
     quote:
-      "Finally a place where ravers rate sets honestly. Found so many new DJs through Decked.",
+      "Finally a place to rate every show I go to — concerts, festivals, club nights, all of it.",
     handle: "@rave_marta",
     location: "Berlin",
     initials: "RM",
   },
   {
     quote:
-      "Verified DJ badge gives me credibility and my fans can trust my profile is real.",
-    handle: "@djshadowtech",
+      "I rated my favorite festival sets and found so many new artists through the community.",
+    handle: "@livemusic_sam",
     location: "Manchester",
-    initials: "DS",
+    initials: "LS",
   },
   {
     quote:
-      "The rating system is clean, the community is real. This is what we needed.",
+      "The rating system is clean and the community is real — whatever live music you're into.",
     handle: "@tekno_jules",
     location: "Paris",
     initials: "TJ",

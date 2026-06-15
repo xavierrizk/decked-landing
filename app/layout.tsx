@@ -5,14 +5,15 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Decked — Rate the Sets That Decked You",
+  title: "Decked — Rate the Live Music That Moves You",
   description:
-    "Discover, rate, and share your favorite DJ sets with a community of ravers. Follow verified DJs, leave reviews, and find your next obsession.",
+    "Discover, rate, and share live music experiences with a community of music lovers. Concerts, festivals, DJ sets, live bands, and raves — all in one place.",
   keywords:
-    "DJ sets, rave ratings, electronic music, DJ reviews, techno, house music",
+    "live music ratings, concert reviews, festival reviews, DJ sets, live bands, raves, concerts, gig reviews",
   openGraph: {
-    title: "Decked — Rate the Sets That Decked You",
-    description: "Discover, rate, and share your favorite DJ sets.",
+    title: "Decked — Rate the Live Music That Moves You",
+    description:
+      "Discover, rate, and share live music experiences — concerts, festivals, DJ sets, and more.",
     url: "https://decked.app",
     siteName: "Decked",
     type: "website",
@@ -21,7 +22,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Decked",
     description:
-      "Discover, rate, and share your favorite DJ sets with a community of ravers.",
+      "Discover, rate, and share live music experiences with a community of music lovers.",
   },
 };
 
@@ -36,7 +37,7 @@ function JsonLd() {
           name: "Decked",
           url: "https://decked.app",
           description:
-            "Discover, rate, and share your favorite DJ sets with a community of ravers.",
+            "Discover, rate, and share live music experiences with a community of music lovers.",
         }),
       }}
     />

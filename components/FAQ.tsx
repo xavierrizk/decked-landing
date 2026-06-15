@@ -6,28 +6,28 @@ import { ChevronDown } from "lucide-react";
 
 const faqs = [
   {
+    q: "What can I rate?",
+    a: "Anything live! Concerts, festivals, DJ sets, live bands, raves — if you experienced it in person, you can rate and review it on Decked.",
+  },
+  {
+    q: "Is Decked only for EDM?",
+    a: "Nope! Rock, pop, hip-hop, country, jazz — any live music. Whether you're at a stadium concert, an intimate gig, or a warehouse rave, it belongs here.",
+  },
+  {
+    q: "How is it different from Spotify?",
+    a: "Spotify is for streaming recorded music. Decked is for LIVE experiences and community reviews — rating the shows you actually went to and discovering what to see next through real fans.",
+  },
+  {
     q: "What is Decked?",
-    a: "Decked is a community platform for rating and discovering DJ sets. Think Letterboxd, but for DJ sets and raves. Create an account, find sets from your favourite artists, leave star ratings and reviews, and follow other ravers to discover music through people with similar taste.",
-  },
-  {
-    q: "How do I become a verified DJ?",
-    a: "Submit a DJ profile request from your account. Our team reviews your request and checks your SoundCloud, Instagram, or other social presence. Verified DJs get a blue checkmark on their profile, increasing trust with fans.",
-  },
-  {
-    q: "Can I download sets from Decked?",
-    a: "No, Decked is a rating and discovery platform, not a hosting service. We link to sets on SoundCloud, Mixcloud, and other platforms — we don't host or allow direct downloads.",
-  },
-  {
-    q: "Is Decked free?",
-    a: "Yes, completely free. Create an account, rate sets, follow DJs, and use all features at no cost. We may introduce premium features in the future but the core experience will always be free.",
+    a: "Decked is a community platform for rating and discovering live music. Think Letterboxd, but for concerts, festivals, DJ sets, and every kind of live performance. Create an account, rate the shows you go to, leave reviews, and follow people with similar taste.",
   },
   {
     q: "How do ratings work?",
-    a: "Ratings are 1–5 stars. Each user can rate a set once. The overall rating shown on a set page is the average of all user ratings. You can also write a text review alongside your rating.",
+    a: "Ratings are 1–5 stars. Each user can rate a performance once. The overall rating shown is the average of all user ratings, and you can write a text review alongside your score.",
   },
   {
-    q: "Who can submit a DJ profile?",
-    a: "Any user can request a DJ profile. Submit your DJ name, bio, and social links. Our admin team reviews requests within a few days.",
+    q: "Is Decked free?",
+    a: "Yes, completely free. Create an account, rate live music, follow artists, and use all features at no cost. We may add premium features later, but the core experience will always be free.",
   },
 ];
 
@@ -81,7 +81,7 @@ export default function FAQ() {
             Frequently Asked Questions
           </h2>
           <p className="text-gray-400 text-lg">
-            Everything you need to know about Decked.
+            Everything you need to know about rating live music.
           </p>
         </motion.div>
 

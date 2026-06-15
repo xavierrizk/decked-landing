@@ -22,10 +22,11 @@ export default function CTASection() {
           transition={{ duration: 0.5 }}
         >
           <h2 className="text-4xl md:text-6xl font-black tracking-tight text-white mb-6">
-            Ready to Rate the Night?
+            Ready to Rate Live Music?
           </h2>
           <p className="text-gray-400 text-lg mb-10">
-            Join thousands of ravers already rating sets on Decked. Free forever.
+            Join thousands of music lovers already rating live experiences on
+            Decked. Free forever.
           </p>
 
           <Link
