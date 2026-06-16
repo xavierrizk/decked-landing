@@ -26,7 +26,7 @@ export default function CTASection() {
           </h2>
           <p className="text-gray-400 text-lg mb-10">
             Join thousands of music lovers already rating live experiences on
-            Decked. Free forever.
+            DECK'D. Free forever.
           </p>
 
           <Link

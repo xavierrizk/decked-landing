@@ -15,14 +15,14 @@ export default function Footer() {
             <div className="flex items-center gap-2 mb-4">
               <span className="text-purple-400">✦</span>
               <span className="text-white font-black text-xl tracking-widest uppercase">
-                Decked
+                DECK'D
               </span>
             </div>
             <p className="text-gray-500 text-sm leading-relaxed mb-6">
               Rate the live music that moves you.
             </p>
             <p className="text-gray-700 text-xs">
-              © {new Date().getFullYear()} Decked. All rights reserved.
+              © 2026 DECK'D. All rights reserved.
             </p>
           </div>
 

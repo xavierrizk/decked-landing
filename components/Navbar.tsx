@@ -18,7 +18,7 @@ export default function Navbar() {
         <Link href="/" className="flex items-center gap-2">
           <span className="text-purple-400 text-lg">✦</span>
           <span className="text-white font-black text-xl tracking-widest uppercase">
-            Decked
+            DECK'D
           </span>
         </Link>
 
@@ -34,7 +34,7 @@ export default function Navbar() {
             href={APP_URL}
             className="bg-purple-600 hover:bg-purple-700 text-white text-sm font-semibold px-4 py-2 rounded-lg transition-all hover:scale-105"
           >
-            Join Decked
+            Join DECK'D
           </Link>
         </div>
       </div>

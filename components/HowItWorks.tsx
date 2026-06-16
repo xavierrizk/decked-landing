@@ -8,7 +8,7 @@ const steps = [
     emoji: "🎤",
     title: "Went to a concert?",
     description:
-      "Rate it on Decked. Score the night, write a review, and remember every show you've been to.",
+      "Rate it on DECK'D. Score the night, write a review, and remember every show you've been to.",
   },
   {
     number: "2",
@@ -38,7 +38,7 @@ export default function HowItWorks() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-5xl font-black tracking-tight text-white mb-4">
-            How Decked Works
+            How DECK'D Works
           </h2>
           <p className="text-gray-400 text-lg">
             However you experience live music.
