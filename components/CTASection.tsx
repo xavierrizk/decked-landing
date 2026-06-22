@@ -25,20 +25,19 @@ export default function CTASection() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-4xl md:text-6xl font-semibold tracking-normal text-white mb-6">
-            Ready to Rate Live Music?
+          <h2 className="text-3xl md:text-5xl font-semibold tracking-normal text-white mb-5">
+            Start logging your shows.
           </h2>
-          <p className="text-gray-400 text-lg mb-10">
-            Join thousands of music lovers already rating live experiences on
-            DECK'D. Free forever.
+          <p className="text-gray-400 text-base mb-10">
+            Free. No catches.
           </p>
 
           <Link
             href={APP_URL}
-            className="inline-flex items-center gap-2 bg-[#FF006E] hover:bg-[#e0005f] text-white font-bold px-10 py-4 rounded-xl text-lg transition-all hover:scale-105 shadow-xl shadow-[#FF006E]/20 mb-6"
+            className="inline-flex items-center gap-2 bg-[#FF006E] hover:bg-[#e0005f] text-white font-semibold px-8 py-3.5 rounded-xl text-base transition-all hover:scale-105 shadow-xl shadow-[#FF006E]/20 mb-6"
           >
-            Get Started Free
-            <ArrowRight className="w-5 h-5" />
+            Create an account
+            <ArrowRight className="w-4 h-4" />
           </Link>
 
           <p className="text-gray-600 text-sm mt-6">

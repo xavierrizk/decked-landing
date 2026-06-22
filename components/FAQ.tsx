@@ -78,10 +78,10 @@ export default function FAQ() {
           className="text-center mb-16"
         >
           <h2 className="text-2xl md:text-4xl font-semibold tracking-normal text-white mb-4">
-            Frequently Asked Questions
+            Questions
           </h2>
-          <p className="text-gray-400 text-lg">
-            Everything you need to know about rating live music.
+          <p className="text-gray-400 text-base">
+            What people usually ask.
           </p>
         </motion.div>
 

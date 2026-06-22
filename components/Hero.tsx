@@ -35,61 +35,49 @@ export default function Hero() {
       <div className="relative z-10 max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-12 pt-12 pb-16">
         {/* Left: text */}
         <div className="flex-1 text-center md:text-left max-w-2xl">
-          {/* Badge */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 border border-[#00D9FF]/30 bg-[#00D9FF]/10 text-[#00D9FF] text-sm px-4 py-1.5 rounded-full mb-8"
-          >
-            <span>✦</span>
-            <span>For every kind of live music</span>
-          </motion.div>
-
           {/* H1 */}
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-4xl md:text-6xl font-semibold leading-snug mb-6"
+            transition={{ duration: 0.5 }}
+            className="text-4xl md:text-6xl font-semibold leading-snug mb-5"
           >
-            Rate the{" "}
+            Your live music,{" "}
             <span className="bg-gradient-to-r from-[#00D9FF] to-[#FF006E] bg-clip-text text-transparent">
-              live music
-            </span>{" "}
-            that moves you
+              logged.
+            </span>
           </motion.h1>
 
           {/* Subheadline */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-xl text-gray-400 max-w-2xl mb-10"
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="text-lg text-gray-400 max-w-xl mb-10 leading-relaxed"
           >
-            Discover concerts, festivals, raves, and DJ sets. Share your
-            experience with a community of music lovers.
+            Rate concerts, DJ sets, festivals, and raves. Build a record of
+            every show you&apos;ve been to — organized, shareable, yours.
           </motion.p>
 
           {/* CTA buttons */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
             className="flex flex-col sm:flex-row items-center md:items-start justify-center md:justify-start gap-4 mb-10"
           >
             <Link
               href={APP_URL}
-              className="flex items-center gap-2 bg-[#FF006E] hover:bg-[#e0005f] text-white font-bold px-8 py-4 rounded-xl text-lg transition-all hover:scale-105 shadow-lg shadow-[#FF006E]/20"
+              className="flex items-center gap-2 bg-[#FF006E] hover:bg-[#e0005f] text-white font-semibold px-7 py-3.5 rounded-xl text-base transition-all hover:scale-105 shadow-lg shadow-[#FF006E]/20"
             >
-              Explore Free
-              <ArrowRight className="w-5 h-5" />
+              Start logging
+              <ArrowRight className="w-4 h-4" />
             </Link>
             <Link
               href={APP_URL}
-              className="flex items-center gap-2 text-gray-400 hover:text-[#00D9FF] transition-colors text-lg"
+              className="flex items-center gap-2 text-gray-400 hover:text-[#00D9FF] transition-colors text-base"
             >
-              Browse Live Music
+              Browse sets
               <ArrowRight className="w-4 h-4" />
             </Link>
           </motion.div>

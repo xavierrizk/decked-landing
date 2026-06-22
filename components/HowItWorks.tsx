@@ -5,24 +5,24 @@ import { motion } from "framer-motion";
 const steps = [
   {
     number: "1",
-    emoji: "🎤",
-    title: "Went to a concert?",
+    emoji: "🎟️",
+    title: "Log the show",
     description:
-      "Rate it on DECK'D. Score the night, write a review, and remember every show you've been to.",
+      "Search for the artist or set, rate it, write a review. Takes 30 seconds.",
   },
   {
     number: "2",
-    emoji: "🎪",
-    title: "Checking the Coachella lineup?",
+    emoji: "📋",
+    title: "Build your profile",
     description:
-      "See what the community recommends. Find the must-see sets before you go.",
+      "Every show stacks up. Your profile becomes a full record of everything you've ever attended.",
   },
   {
     number: "3",
-    emoji: "🎧",
-    title: "Found an amazing DJ set?",
+    emoji: "🔍",
+    title: "Discover what to see next",
     description:
-      "Share it with music fans worldwide and help the best performances rise to the top.",
+      "Browse community ratings to find out who's worth seeing before you buy a ticket.",
   },
 ];
 
@@ -38,10 +38,10 @@ export default function HowItWorks() {
           className="text-center mb-16"
         >
           <h2 className="text-2xl md:text-4xl font-semibold tracking-normal text-white mb-4">
-            How DECK'D Works
+            How it works
           </h2>
-          <p className="text-gray-400 text-lg">
-            However you experience live music.
+          <p className="text-gray-400 text-base">
+            Simple. Like it should be.
           </p>
         </motion.div>
 

@@ -1,49 +1,49 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Star, MapPin, MessageCircle, Heart, Users, Globe } from "lucide-react";
+import { Star, BookOpen, MessageCircle, Users, TrendingUp, Music } from "lucide-react";
 
 const features = [
   {
     icon: Star,
-    title: "Rate Everything",
+    title: "Rate what you've seen",
     description:
-      "Concerts, festivals, DJ sets, live bands, raves — if it's live, you can rate it.",
+      "Score every concert, DJ set, festival, or rave you attend. Break it down by performance, crowd, and venue.",
     accent: "#00D9FF",
   },
   {
-    icon: MapPin,
-    title: "Find What's Next",
+    icon: BookOpen,
+    title: "Keep a log",
     description:
-      "Discover live music events happening in your city and beyond.",
+      "Your profile becomes a full record of your live music history. Every show, searchable and organized.",
     accent: "#FF006E",
   },
   {
     icon: MessageCircle,
-    title: "Share Your Taste",
+    title: "Leave a review",
     description:
-      "Review and discuss live music experiences with people who were there.",
+      "Write about the night. Attach a video clip. Other fans who were there will know exactly what you mean.",
     accent: "#00D9FF",
   },
   {
-    icon: Heart,
-    title: "Follow What You Love",
+    icon: Music,
+    title: "Follow artists",
     description:
-      "Keep up with your favorite artists and the events you don't want to miss.",
+      "Follow the DJs and artists you care about. See their upcoming sets and how the community rated them.",
     accent: "#FF006E",
   },
   {
     icon: Users,
-    title: "Community Driven",
+    title: "See what your friends rate",
     description:
-      "Real fans rating real experiences — honest ratings you can actually trust.",
+      "Follow people with the same taste. Find out who else was at the same show.",
     accent: "#00D9FF",
   },
   {
-    icon: Globe,
-    title: "For Everyone",
+    icon: TrendingUp,
+    title: "Discover what's worth seeing",
     description:
-      "Whether you're into EDM, rock, hip-hop, concerts, or festivals — it's all here.",
+      "Community ratings surface the best sets. No algorithms — just people who were actually there.",
     accent: "#FF006E",
   },
 ];
@@ -59,10 +59,10 @@ export default function Features() {
         className="text-center mb-16"
       >
         <h2 className="text-2xl md:text-4xl font-semibold tracking-normal text-white mb-4">
-          Everything You Need to Rate Live Music
+          Built for people who actually go to shows
         </h2>
-        <p className="text-gray-400 text-lg max-w-xl mx-auto">
-          Built for everyone who loves a live show.
+        <p className="text-gray-400 text-base max-w-xl mx-auto">
+          Not for streaming. For the nights you were actually there.
         </p>
       </motion.div>
 

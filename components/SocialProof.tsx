@@ -82,7 +82,7 @@ export default function SocialProof() {
         className="text-center mb-12"
       >
         <h2 className="text-2xl md:text-4xl font-semibold tracking-normal text-white mb-4">
-          What the Community Says
+          From the community
         </h2>
       </motion.div>
 
