@@ -58,7 +58,7 @@ export default function Features() {
         transition={{ duration: 0.5 }}
         className="text-center mb-16"
       >
-        <h2 className="text-3xl md:text-5xl font-black tracking-tight text-white mb-4">
+        <h2 className="text-2xl md:text-4xl font-semibold tracking-normal text-white mb-4">
           Everything You Need to Rate Live Music
         </h2>
         <p className="text-gray-400 text-lg max-w-xl mx-auto">

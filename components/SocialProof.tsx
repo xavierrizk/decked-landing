@@ -63,7 +63,7 @@ export default function SocialProof() {
               className="text-center bg-[#111114] border border-white/[0.07] rounded-2xl p-8"
             >
               <div
-                className="text-4xl font-black mb-2"
+                className="text-4xl font-bold mb-2"
                 style={{ color: i % 2 === 0 ? "#00D9FF" : "#FF006E" }}
               >
                 {stat.number}
@@ -81,7 +81,7 @@ export default function SocialProof() {
         transition={{ duration: 0.5 }}
         className="text-center mb-12"
       >
-        <h2 className="text-3xl md:text-5xl font-black tracking-tight text-white mb-4">
+        <h2 className="text-2xl md:text-4xl font-semibold tracking-normal text-white mb-4">
           What the Community Says
         </h2>
       </motion.div>
@@ -97,7 +97,7 @@ export default function SocialProof() {
             className="bg-[#111114] border border-white/[0.07] rounded-2xl p-6"
           >
             <div
-              className="text-5xl font-black leading-none mb-4"
+              className="text-5xl font-bold leading-none mb-4"
               style={{ color: t.accent }}
             >
               &ldquo;

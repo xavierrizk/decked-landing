@@ -51,7 +51,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-5xl md:text-7xl font-black tracking-tight leading-tight mb-6"
+            className="text-4xl md:text-6xl font-semibold leading-snug mb-6"
           >
             Rate the{" "}
             <span className="bg-gradient-to-r from-[#00D9FF] to-[#FF006E] bg-clip-text text-transparent">

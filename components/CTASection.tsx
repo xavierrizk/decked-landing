@@ -25,7 +25,7 @@ export default function CTASection() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-4xl md:text-6xl font-black tracking-tight text-white mb-6">
+          <h2 className="text-4xl md:text-6xl font-semibold tracking-normal text-white mb-6">
             Ready to Rate Live Music?
           </h2>
           <p className="text-gray-400 text-lg mb-10">
