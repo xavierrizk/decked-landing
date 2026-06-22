@@ -13,7 +13,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-1">
             <div className="flex items-center gap-2 mb-4">
-              <span className="text-purple-400">✦</span>
+              <span className="text-[#00D9FF]">✦</span>
               <span className="text-white font-black text-xl tracking-widest uppercase">
                 DECK'D
               </span>
@@ -97,21 +97,21 @@ export default function Footer() {
             <div className="flex items-center gap-4">
               <Link
                 href="#"
-                className="text-gray-500 hover:text-white transition-colors"
+                className="text-gray-500 hover:text-[#00D9FF] transition-colors"
                 aria-label="Instagram"
               >
                 <Globe className="w-5 h-5" />
               </Link>
               <Link
                 href="#"
-                className="text-gray-500 hover:text-white transition-colors"
+                className="text-gray-500 hover:text-[#00D9FF] transition-colors"
                 aria-label="Twitter / X"
               >
                 <Share2 className="w-5 h-5" />
               </Link>
               <Link
                 href="#"
-                className="text-gray-500 hover:text-white transition-colors text-sm font-bold"
+                className="text-gray-500 hover:text-[#00D9FF] transition-colors text-sm font-bold"
                 aria-label="Discord"
               >
                 Discord

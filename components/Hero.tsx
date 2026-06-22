@@ -21,13 +21,15 @@ export default function Hero() {
         className="absolute inset-0 pointer-events-none"
         style={{
           backgroundImage:
-            "linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px)",
+            "linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px)",
           backgroundSize: "40px 40px",
         }}
       />
 
-      {/* Purple blob */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-purple-600/20 blur-[120px] rounded-full pointer-events-none animate-glow" />
+      {/* Cyan glow — left */}
+      <div className="absolute top-0 left-1/4 w-[500px] h-[350px] bg-[#00D9FF]/10 blur-[120px] rounded-full pointer-events-none animate-glow" />
+      {/* Pink glow — right */}
+      <div className="absolute top-1/4 right-1/4 w-[400px] h-[300px] bg-[#FF006E]/10 blur-[120px] rounded-full pointer-events-none animate-glow" style={{ animationDelay: '1.5s' }} />
 
       {/* Content */}
       <div className="relative z-10 max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-12 pt-12 pb-16">
@@ -38,7 +40,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 border border-purple-500/30 bg-purple-500/10 text-purple-300 text-sm px-4 py-1.5 rounded-full mb-8"
+            className="inline-flex items-center gap-2 border border-[#00D9FF]/30 bg-[#00D9FF]/10 text-[#00D9FF] text-sm px-4 py-1.5 rounded-full mb-8"
           >
             <span>✦</span>
             <span>For every kind of live music</span>
@@ -52,7 +54,7 @@ export default function Hero() {
             className="text-5xl md:text-7xl font-black tracking-tight leading-tight mb-6"
           >
             Rate the{" "}
-            <span className="bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#00D9FF] to-[#FF006E] bg-clip-text text-transparent">
               live music
             </span>{" "}
             that moves you
@@ -78,14 +80,14 @@ export default function Hero() {
           >
             <Link
               href={APP_URL}
-              className="flex items-center gap-2 bg-purple-600 hover:bg-purple-700 text-white font-bold px-8 py-4 rounded-xl text-lg transition-all hover:scale-105 shadow-lg shadow-purple-900/30"
+              className="flex items-center gap-2 bg-[#FF006E] hover:bg-[#e0005f] text-white font-bold px-8 py-4 rounded-xl text-lg transition-all hover:scale-105 shadow-lg shadow-[#FF006E]/20"
             >
               Explore Free
               <ArrowRight className="w-5 h-5" />
             </Link>
             <Link
               href={APP_URL}
-              className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors text-lg"
+              className="flex items-center gap-2 text-gray-400 hover:text-[#00D9FF] transition-colors text-lg"
             >
               Browse Live Music
               <ArrowRight className="w-4 h-4" />

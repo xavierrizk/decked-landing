@@ -13,16 +13,14 @@ export default function Navbar() {
       transition={{ duration: 0.5 }}
       className="fixed top-0 left-0 right-0 z-50 bg-[#0a0a0a]/90 backdrop-blur-md border-b border-white/[0.07]"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-        {/* Wordmark */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-[60px] flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
-          <span className="text-purple-400 text-lg">✦</span>
+          <span className="text-[#00D9FF] text-lg">✦</span>
           <span className="text-white font-black text-xl tracking-widest uppercase">
             DECK'D
           </span>
         </Link>
 
-        {/* Right side */}
         <div className="flex items-center gap-4">
           <Link
             href={APP_URL}
@@ -32,7 +30,7 @@ export default function Navbar() {
           </Link>
           <Link
             href={APP_URL}
-            className="bg-purple-600 hover:bg-purple-700 text-white text-sm font-semibold px-4 py-2 rounded-lg transition-all hover:scale-105"
+            className="bg-[#FF006E] hover:bg-[#e0005f] text-white text-sm font-semibold px-4 py-2 rounded-xl transition-all hover:scale-105"
           >
             Join DECK'D
           </Link>

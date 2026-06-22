@@ -9,42 +9,48 @@ const features = [
     title: "Rate Everything",
     description:
       "Concerts, festivals, DJ sets, live bands, raves — if it's live, you can rate it.",
+    accent: "#00D9FF",
   },
   {
     icon: MapPin,
     title: "Find What's Next",
     description:
       "Discover live music events happening in your city and beyond.",
+    accent: "#FF006E",
   },
   {
     icon: MessageCircle,
     title: "Share Your Taste",
     description:
       "Review and discuss live music experiences with people who were there.",
+    accent: "#00D9FF",
   },
   {
     icon: Heart,
     title: "Follow What You Love",
     description:
       "Keep up with your favorite artists and the events you don't want to miss.",
+    accent: "#FF006E",
   },
   {
     icon: Users,
     title: "Community Driven",
     description:
       "Real fans rating real experiences — honest ratings you can actually trust.",
+    accent: "#00D9FF",
   },
   {
     icon: Globe,
     title: "For Everyone",
     description:
       "Whether you're into EDM, rock, hip-hop, concerts, or festivals — it's all here.",
+    accent: "#FF006E",
   },
 ];
 
 export default function Features() {
   return (
-    <section className="py-24 px-4 sm:px-6 max-w-7xl mx-auto">
+    <section id="features" className="py-24 px-4 sm:px-6 max-w-7xl mx-auto">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -70,10 +76,14 @@ export default function Features() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="bg-[#111114] border border-white/[0.07] rounded-2xl p-6 hover:border-purple-500/30 transition-all hover:-translate-y-1 cursor-default"
+              className="bg-[#111114] border border-white/[0.07] rounded-2xl p-6 hover:border-white/20 transition-all hover:-translate-y-1 cursor-default"
+              style={{ ['--accent' as string]: feature.accent }}
             >
-              <div className="bg-purple-500/10 rounded-xl p-3 w-fit mb-4">
-                <Icon className="w-6 h-6 text-purple-400" />
+              <div
+                className="rounded-xl p-3 w-fit mb-4"
+                style={{ background: `${feature.accent}18` }}
+              >
+                <Icon className="w-6 h-6" style={{ color: feature.accent }} />
               </div>
               <h3 className="text-white font-bold text-lg mb-2">
                 {feature.title}

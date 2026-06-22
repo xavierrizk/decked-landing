@@ -40,12 +40,12 @@ function FAQItem({ q, a }: { q: string; a: string }) {
         onClick={() => setOpen(!open)}
         className="flex items-center justify-between w-full py-5 text-left group"
       >
-        <span className="text-white font-semibold pr-4 group-hover:text-purple-300 transition-colors">
+        <span className="text-white font-semibold pr-4 group-hover:text-[#00D9FF] transition-colors">
           {q}
         </span>
         <ChevronDown
           className={`w-5 h-5 text-gray-500 flex-shrink-0 transition-transform duration-300 ${
-            open ? "rotate-180" : ""
+            open ? "rotate-180 text-[#00D9FF]" : ""
           }`}
         />
       </button>

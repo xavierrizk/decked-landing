@@ -10,6 +10,7 @@ const testimonials = [
     handle: "@rave_marta",
     location: "Berlin",
     initials: "RM",
+    accent: "#00D9FF",
   },
   {
     quote:
@@ -17,6 +18,7 @@ const testimonials = [
     handle: "@livemusic_sam",
     location: "Manchester",
     initials: "LS",
+    accent: "#FF006E",
   },
   {
     quote:
@@ -24,13 +26,13 @@ const testimonials = [
     handle: "@tekno_jules",
     location: "Paris",
     initials: "TJ",
+    accent: "#00D9FF",
   },
 ];
 
 export default function SocialProof() {
   const stats = useStats();
 
-  // Real, live numbers — rendered only once loaded (never fake fallbacks)
   const boxes = stats
     ? [
         { number: fmtStat(stats.totalUsers),   label: "Music Lovers" },
@@ -42,7 +44,7 @@ export default function SocialProof() {
 
   return (
     <section className="py-24 px-4 sm:px-6 max-w-7xl mx-auto">
-      {/* Stats — only shown when real data has loaded */}
+      {/* Stats */}
       {boxes.length > 0 && (
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -60,14 +62,18 @@ export default function SocialProof() {
               transition={{ duration: 0.4, delay: i * 0.1 }}
               className="text-center bg-[#111114] border border-white/[0.07] rounded-2xl p-8"
             >
-              <div className="text-4xl font-black text-white mb-2">{stat.number}</div>
+              <div
+                className="text-4xl font-black mb-2"
+                style={{ color: i % 2 === 0 ? "#00D9FF" : "#FF006E" }}
+              >
+                {stat.number}
+              </div>
               <div className="text-gray-500 text-sm">{stat.label}</div>
             </motion.div>
           ))}
         </motion.div>
       )}
 
-      {/* Testimonials heading */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -80,7 +86,6 @@ export default function SocialProof() {
         </h2>
       </motion.div>
 
-      {/* Testimonials grid */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {testimonials.map((t, i) => (
           <motion.div
@@ -91,14 +96,20 @@ export default function SocialProof() {
             transition={{ duration: 0.5, delay: i * 0.12 }}
             className="bg-[#111114] border border-white/[0.07] rounded-2xl p-6"
           >
-            <div className="text-5xl font-black text-purple-700 leading-none mb-4">
+            <div
+              className="text-5xl font-black leading-none mb-4"
+              style={{ color: t.accent }}
+            >
               &ldquo;
             </div>
             <p className="text-gray-300 text-sm leading-relaxed mb-6">
               {t.quote}
             </p>
             <div className="flex items-center gap-3">
-              <div className="w-9 h-9 rounded-full bg-gradient-to-br from-purple-600 to-purple-800 flex items-center justify-center text-white text-xs font-bold flex-shrink-0">
+              <div
+                className="w-9 h-9 rounded-full flex items-center justify-center text-white text-xs font-bold flex-shrink-0"
+                style={{ background: `linear-gradient(135deg, ${t.accent}cc, ${t.accent}66)`, border: `1px solid ${t.accent}40` }}
+              >
                 {t.initials}
               </div>
               <div>

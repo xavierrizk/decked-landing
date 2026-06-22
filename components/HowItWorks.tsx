@@ -28,7 +28,7 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section className="py-24 px-4 sm:px-6 bg-[#0a0a0a]">
+    <section id="how-it-works" className="py-24 px-4 sm:px-6 bg-[#0a0a0a]">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -46,8 +46,8 @@ export default function HowItWorks() {
         </motion.div>
 
         <div className="relative">
-          {/* Dashed connector line (desktop) */}
-          <div className="hidden md:block absolute top-10 left-[16.67%] right-[16.67%] h-px border-t-2 border-dashed border-purple-800/40 z-0" />
+          {/* Connector line */}
+          <div className="hidden md:block absolute top-10 left-[16.67%] right-[16.67%] h-px border-t-2 border-dashed border-[#00D9FF]/20 z-0" />
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 relative z-10">
             {steps.map((step, i) => (
@@ -59,7 +59,13 @@ export default function HowItWorks() {
                 transition={{ duration: 0.5, delay: i * 0.12 }}
                 className="flex flex-col items-center text-center"
               >
-                <div className="bg-gradient-to-br from-purple-600 to-purple-800 rounded-full w-12 h-12 flex items-center justify-center text-white font-black text-xl mb-4 shadow-lg shadow-purple-900/40">
+                <div
+                  className="w-12 h-12 rounded-full flex items-center justify-center text-white font-black text-xl mb-4 shadow-lg"
+                  style={{
+                    background: "linear-gradient(135deg, #00D9FF, #FF006E)",
+                    boxShadow: "0 0 24px rgba(0,217,255,0.2)",
+                  }}
+                >
                   {step.number}
                 </div>
                 <div className="text-2xl mb-3">{step.emoji}</div>
