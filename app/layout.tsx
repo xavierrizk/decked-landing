@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
+const spaceGrotesk = Space_Grotesk({ subsets: ["latin"], variable: "--font-space-grotesk" });
 
 export const metadata: Metadata = {
   title: "DECK'D — Rate the Live Music That Moves You",
@@ -56,7 +57,7 @@ export default function RootLayout({
         <JsonLd />
       </head>
       <body
-        className={`${inter.className} bg-[#0a0a0a] text-white antialiased`}
+        className={`${inter.className} ${spaceGrotesk.variable} bg-[#0a0a0a] text-white antialiased`}
       >
         {children}
       </body>

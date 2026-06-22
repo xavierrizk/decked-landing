@@ -9,14 +9,8 @@ const APP_URL = "https://decked-frontend.onrender.com";
 export default function CTASection() {
   return (
     <section className="relative py-32 px-4 sm:px-6 overflow-hidden">
-      {/* Cyan glow */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-        <div className="w-[400px] h-[250px] bg-[#00D9FF]/10 blur-[100px] rounded-full animate-glow" />
-      </div>
-      {/* Pink glow offset */}
-      <div className="absolute inset-0 flex items-center justify-center translate-x-32 pointer-events-none">
-        <div className="w-[300px] h-[200px] bg-[#FF006E]/10 blur-[100px] rounded-full animate-glow" style={{ animationDelay: '1s' }} />
-      </div>
+      {/* Subtle vignette only */}
+      <div className="absolute inset-0 pointer-events-none" style={{ background: 'radial-gradient(ellipse 60% 50% at 50% 50%, rgba(255,255,255,0.03) 0%, transparent 70%)' }} />
 
       <div className="relative z-10 max-w-2xl mx-auto text-center">
         <motion.div
@@ -34,7 +28,7 @@ export default function CTASection() {
 
           <Link
             href={APP_URL}
-            className="inline-flex items-center gap-2 bg-[#FF006E] hover:bg-[#e0005f] text-white font-semibold px-8 py-3.5 rounded-xl text-base transition-all hover:scale-105 shadow-xl shadow-[#FF006E]/20 mb-6"
+            className="inline-flex items-center gap-2 bg-white text-black font-semibold px-8 py-3.5 rounded-xl text-base transition-all hover:bg-white/90 mb-6"
           >
             Create an account
             <ArrowRight className="w-4 h-4" />

@@ -62,10 +62,7 @@ export default function SocialProof() {
               transition={{ duration: 0.4, delay: i * 0.1 }}
               className="text-center bg-[#111114] border border-white/[0.07] rounded-2xl p-8"
             >
-              <div
-                className="text-4xl font-bold mb-2"
-                style={{ color: i % 2 === 0 ? "#00D9FF" : "#FF006E" }}
-              >
+              <div className="text-4xl font-bold mb-2 text-white">
                 {stat.number}
               </div>
               <div className="text-gray-500 text-sm">{stat.label}</div>
@@ -96,20 +93,14 @@ export default function SocialProof() {
             transition={{ duration: 0.5, delay: i * 0.12 }}
             className="bg-[#111114] border border-white/[0.07] rounded-2xl p-6"
           >
-            <div
-              className="text-5xl font-bold leading-none mb-4"
-              style={{ color: t.accent }}
-            >
+            <div className="text-5xl font-bold leading-none mb-4 text-white/20">
               &ldquo;
             </div>
             <p className="text-gray-300 text-sm leading-relaxed mb-6">
               {t.quote}
             </p>
             <div className="flex items-center gap-3">
-              <div
-                className="w-9 h-9 rounded-full flex items-center justify-center text-white text-xs font-bold flex-shrink-0"
-                style={{ background: `linear-gradient(135deg, ${t.accent}cc, ${t.accent}66)`, border: `1px solid ${t.accent}40` }}
-              >
+              <div className="w-9 h-9 rounded-full flex items-center justify-center text-white text-xs font-bold flex-shrink-0 bg-white/[0.08] border border-white/10">
                 {t.initials}
               </div>
               <div>

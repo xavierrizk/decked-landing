@@ -13,9 +13,23 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-1">
             <div className="flex items-center gap-2 mb-4">
-              <span className="text-[#00D9FF]">✦</span>
-              <span className="text-white font-black text-xl tracking-widest uppercase">
-                DECK'D
+              <div className="relative w-5 h-5 flex-shrink-0">
+                <div className="absolute inset-0 rounded-full" style={{ background: 'linear-gradient(135deg, #5A6470, #00D9FF)' }} />
+                <div className="absolute inset-[3px] rounded-full bg-[#0a0a0a]" />
+                <div className="absolute inset-[6px] rounded-full" style={{ background: 'linear-gradient(135deg, #00D9FF, #FF006E)' }} />
+                <div className="absolute inset-[8px] rounded-full bg-[#0a0a0a]" />
+              </div>
+              <span
+                className="text-sm font-black tracking-tight leading-none"
+                style={{
+                  fontFamily: 'var(--font-space-grotesk), sans-serif',
+                  background: 'linear-gradient(135deg, #F5F5F5 30%, #00D9FF)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  backgroundClip: 'text',
+                }}
+              >
+                DECK&apos;D
               </span>
             </div>
             <p className="text-gray-500 text-sm leading-relaxed mb-6">

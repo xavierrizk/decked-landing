@@ -47,7 +47,7 @@ export default function HowItWorks() {
 
         <div className="relative">
           {/* Connector line */}
-          <div className="hidden md:block absolute top-10 left-[16.67%] right-[16.67%] h-px border-t-2 border-dashed border-[#00D9FF]/20 z-0" />
+          <div className="hidden md:block absolute top-10 left-[16.67%] right-[16.67%] h-px border-t border-dashed border-white/10 z-0" />
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 relative z-10">
             {steps.map((step, i) => (
@@ -59,13 +59,7 @@ export default function HowItWorks() {
                 transition={{ duration: 0.5, delay: i * 0.12 }}
                 className="flex flex-col items-center text-center"
               >
-                <div
-                  className="w-12 h-12 rounded-full flex items-center justify-center text-white font-black text-xl mb-4 shadow-lg"
-                  style={{
-                    background: "linear-gradient(135deg, #00D9FF, #FF006E)",
-                    boxShadow: "0 0 24px rgba(0,217,255,0.2)",
-                  }}
-                >
+                <div className="w-10 h-10 rounded-xl flex items-center justify-center text-white font-semibold text-sm mb-4 bg-white/[0.08] border border-white/10">
                   {step.number}
                 </div>
                 <div className="text-2xl mb-3">{step.emoji}</div>

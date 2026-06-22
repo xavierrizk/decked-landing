@@ -5,6 +5,32 @@ import Link from "next/link";
 
 const APP_URL = "https://decked-frontend.onrender.com";
 
+function Logo() {
+  return (
+    <div className="flex items-center gap-2">
+      {/* Concentric circle mark — matches main site */}
+      <div className="relative w-6 h-6 flex-shrink-0">
+        <div className="absolute inset-0 rounded-full" style={{ background: 'linear-gradient(135deg, #5A6470, #00D9FF)' }} />
+        <div className="absolute inset-[3.5px] rounded-full bg-[#0a0a0a]" />
+        <div className="absolute inset-[7px] rounded-full" style={{ background: 'linear-gradient(135deg, #00D9FF, #FF006E)' }} />
+        <div className="absolute inset-[9.5px] rounded-full bg-[#0a0a0a]" />
+      </div>
+      <span
+        className="text-sm font-black tracking-tight leading-none"
+        style={{
+          fontFamily: 'var(--font-space-grotesk), sans-serif',
+          background: 'linear-gradient(135deg, #F5F5F5 30%, #00D9FF)',
+          WebkitBackgroundClip: 'text',
+          WebkitTextFillColor: 'transparent',
+          backgroundClip: 'text',
+        }}
+      >
+        DECK&apos;D
+      </span>
+    </div>
+  );
+}
+
 export default function Navbar() {
   return (
     <motion.nav
@@ -14,11 +40,8 @@ export default function Navbar() {
       className="fixed top-0 left-0 right-0 z-50 bg-[#0a0a0a]/90 backdrop-blur-md border-b border-white/[0.07]"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-[60px] flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2">
-          <span className="text-[#00D9FF] text-lg">✦</span>
-          <span className="text-white font-black text-xl tracking-widest uppercase">
-            DECK'D
-          </span>
+        <Link href="/">
+          <Logo />
         </Link>
 
         <div className="flex items-center gap-4">
@@ -30,9 +53,9 @@ export default function Navbar() {
           </Link>
           <Link
             href={APP_URL}
-            className="bg-[#FF006E] hover:bg-[#e0005f] text-white text-sm font-semibold px-4 py-2 rounded-xl transition-all hover:scale-105"
+            className="bg-white/[0.08] hover:bg-white/[0.14] border border-white/10 text-white text-sm font-semibold px-4 py-2 rounded-xl transition-all"
           >
-            Join DECK'D
+            Join DECK&apos;D
           </Link>
         </div>
       </div>

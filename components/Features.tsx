@@ -76,14 +76,10 @@ export default function Features() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="bg-[#111114] border border-white/[0.07] rounded-2xl p-6 hover:border-white/20 transition-all hover:-translate-y-1 cursor-default"
-              style={{ ['--accent' as string]: feature.accent }}
+              className="bg-[#111114] border border-white/[0.07] rounded-2xl p-6 hover:border-white/15 transition-all cursor-default"
             >
-              <div
-                className="rounded-xl p-3 w-fit mb-4"
-                style={{ background: `${feature.accent}18` }}
-              >
-                <Icon className="w-6 h-6" style={{ color: feature.accent }} />
+              <div className="rounded-xl p-3 w-fit mb-4 bg-white/[0.06]">
+                <Icon className="w-5 h-5 text-gray-400" />
               </div>
               <h3 className="text-white font-bold text-lg mb-2">
                 {feature.title}

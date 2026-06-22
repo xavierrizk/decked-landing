@@ -26,10 +26,8 @@ export default function Hero() {
         }}
       />
 
-      {/* Cyan glow — left */}
-      <div className="absolute top-0 left-1/4 w-[500px] h-[350px] bg-[#00D9FF]/10 blur-[120px] rounded-full pointer-events-none animate-glow" />
-      {/* Pink glow — right */}
-      <div className="absolute top-1/4 right-1/4 w-[400px] h-[300px] bg-[#FF006E]/10 blur-[120px] rounded-full pointer-events-none animate-glow" style={{ animationDelay: '1.5s' }} />
+      {/* Subtle dark vignette — no colored blobs */}
+      <div className="absolute inset-0 pointer-events-none" style={{ background: 'radial-gradient(ellipse 80% 60% at 50% 0%, rgba(255,255,255,0.03) 0%, transparent 70%)' }} />
 
       {/* Content */}
       <div className="relative z-10 max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-12 pt-12 pb-16">
@@ -68,7 +66,7 @@ export default function Hero() {
           >
             <Link
               href={APP_URL}
-              className="flex items-center gap-2 bg-[#FF006E] hover:bg-[#e0005f] text-white font-semibold px-7 py-3.5 rounded-xl text-base transition-all hover:scale-105 shadow-lg shadow-[#FF006E]/20"
+              className="flex items-center gap-2 bg-white hover:bg-white/90 text-black font-semibold px-7 py-3.5 rounded-xl text-base transition-all"
             >
               Start logging
               <ArrowRight className="w-4 h-4" />
