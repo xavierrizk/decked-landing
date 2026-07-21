@@ -53,7 +53,8 @@ export default function Navbar() {
           </Link>
           <Link
             href={APP_URL}
-            className="bg-white/[0.08] hover:bg-white/[0.14] border border-white/10 text-white text-sm font-semibold px-4 py-2 rounded-xl transition-all"
+            className="text-white text-sm font-semibold px-4 py-2 rounded-xl transition-all hover:brightness-110 hover:shadow-[0_0_20px_rgba(0,217,255,0.35)]"
+            style={{ background: "linear-gradient(135deg, #00D9FF, #FF006E)" }}
           >
             Join DECK&apos;D
           </Link>

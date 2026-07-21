@@ -9,8 +9,8 @@ const APP_URL = "https://decked-frontend.onrender.com";
 export default function CTASection() {
   return (
     <section className="relative py-32 px-4 sm:px-6 overflow-hidden">
-      {/* Subtle vignette only */}
-      <div className="absolute inset-0 pointer-events-none" style={{ background: 'radial-gradient(ellipse 60% 50% at 50% 50%, rgba(255,255,255,0.03) 0%, transparent 70%)' }} />
+      {/* Cyan → pink glow */}
+      <div className="absolute inset-0 pointer-events-none" style={{ background: 'radial-gradient(ellipse 50% 50% at 38% 45%, rgba(0,217,255,0.16) 0%, transparent 70%), radial-gradient(ellipse 50% 50% at 64% 60%, rgba(255,0,110,0.16) 0%, transparent 70%)' }} />
 
       <div className="relative z-10 max-w-2xl mx-auto text-center">
         <motion.div
@@ -28,7 +28,8 @@ export default function CTASection() {
 
           <Link
             href={APP_URL}
-            className="inline-flex items-center gap-2 bg-white text-black font-semibold px-8 py-3.5 rounded-xl text-base transition-all hover:bg-white/90 mb-6"
+            className="inline-flex items-center gap-2 text-white font-semibold px-8 py-3.5 rounded-xl text-base transition-all hover:brightness-110 hover:shadow-[0_0_30px_rgba(0,217,255,0.4)] mb-6"
+            style={{ background: "linear-gradient(135deg, #00D9FF, #FF006E)" }}
           >
             Create an account
             <ArrowRight className="w-4 h-4" />

@@ -76,10 +76,22 @@ export default function Features() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="bg-[#111114] border border-white/[0.07] rounded-2xl p-6 hover:border-white/15 transition-all cursor-default"
+              className="group bg-[#111114] border border-white/[0.07] rounded-2xl p-6 transition-all cursor-default hover:-translate-y-0.5"
+              style={{ ["--accent" as string]: feature.accent }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.borderColor = `${feature.accent}55`;
+                e.currentTarget.style.boxShadow = `0 0 30px ${feature.accent}22`;
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.borderColor = "";
+                e.currentTarget.style.boxShadow = "";
+              }}
             >
-              <div className="rounded-xl p-3 w-fit mb-4 bg-white/[0.06]">
-                <Icon className="w-5 h-5 text-gray-400" />
+              <div
+                className="rounded-xl p-3 w-fit mb-4"
+                style={{ background: `${feature.accent}1A`, border: `1px solid ${feature.accent}33` }}
+              >
+                <Icon className="w-5 h-5" style={{ color: feature.accent }} />
               </div>
               <h3 className="text-white font-bold text-lg mb-2">
                 {feature.title}
