@@ -68,14 +68,14 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 
 export default function FAQ() {
   return (
-    <section className="py-24 px-4 sm:px-6 bg-[#0a0a0a]">
+    <section className="py-16 px-4 sm:px-6 bg-[#0a0a0a]">
       <div className="max-w-3xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-center mb-16"
+          className="text-center mb-10"
         >
           <h2 className="text-2xl md:text-4xl font-semibold tracking-normal text-white mb-4">
             Questions

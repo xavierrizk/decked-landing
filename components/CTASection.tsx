@@ -8,7 +8,7 @@ const APP_URL = "https://decked-frontend.onrender.com";
 
 export default function CTASection() {
   return (
-    <section className="relative py-32 px-4 sm:px-6 overflow-hidden">
+    <section className="relative py-20 px-4 sm:px-6 overflow-hidden">
       {/* Cyan → pink glow */}
       <div className="absolute inset-0 pointer-events-none" style={{ background: 'radial-gradient(ellipse 50% 50% at 38% 45%, rgba(0,217,255,0.16) 0%, transparent 70%), radial-gradient(ellipse 50% 50% at 64% 60%, rgba(255,0,110,0.16) 0%, transparent 70%)' }} />
 

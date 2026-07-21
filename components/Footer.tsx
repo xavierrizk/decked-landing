@@ -7,7 +7,7 @@ const APP_URL = "https://decked-frontend.onrender.com";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0a0a0a] border-t border-white/[0.05] py-16 px-4 sm:px-6">
+    <footer className="bg-[#0a0a0a] border-t border-white/[0.05] py-12 px-4 sm:px-6">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           {/* Brand */}
