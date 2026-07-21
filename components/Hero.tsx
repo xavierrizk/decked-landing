@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
-import Turntable from "./Turntable";
+import ProductShot from "./ProductShot";
 import { useStats, fmtStat } from "@/lib/useStats";
 
 const APP_URL = "https://decked-frontend.onrender.com";
@@ -30,9 +30,9 @@ export default function Hero() {
       <div className="absolute inset-0 pointer-events-none" style={{ background: 'radial-gradient(ellipse 80% 60% at 50% 0%, rgba(255,255,255,0.03) 0%, transparent 70%)' }} />
 
       {/* Content */}
-      <div className="relative z-10 max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-12 pt-12 pb-16">
+      <div className="relative z-10 max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-12 md:gap-8 pt-12 pb-16">
         {/* Left: text */}
-        <div className="flex-1 text-center md:text-left max-w-2xl">
+        <div className="flex-1 text-center md:text-left max-w-xl">
           {/* H1 */}
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
@@ -91,9 +91,9 @@ export default function Hero() {
           </motion.p>
         </div>
 
-        {/* Right: turntable */}
-        <div className="flex-shrink-0 hidden md:flex items-center justify-center">
-          <Turntable />
+        {/* Right: product screenshots */}
+        <div className="flex-1 w-full flex items-center justify-center md:justify-end">
+          <ProductShot />
         </div>
       </div>
     </section>
