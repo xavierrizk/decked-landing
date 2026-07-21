@@ -4,30 +4,34 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import ProductShot from "./ProductShot";
+import RaveBackground from "./RaveBackground";
 import { useStats, fmtStat } from "@/lib/useStats";
 
 const APP_URL = "https://decked-frontend.onrender.com";
 
 export default function Hero() {
   const stats = useStats();
-  const statsLine = stats
-    ? `${fmtStat(stats.totalUsers)} Music Lovers · ${fmtStat(stats.totalEvents)} Live Events Rated · Free Forever`
-    : "Free Forever";
+  const pills = stats
+    ? [
+        `${fmtStat(stats.totalUsers)} Music Lovers`,
+        `${fmtStat(stats.totalEvents)} Live Events Rated`,
+      ]
+    : [];
 
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden pt-16">
-      {/* Grid background */}
+      {/* Animated rave background — dancing silhouettes + club lighting */}
+      <RaveBackground />
+
+      {/* Faint grid over the rave wash for structure */}
       <div
-        className="absolute inset-0 pointer-events-none"
+        className="absolute inset-0 pointer-events-none opacity-40"
         style={{
           backgroundImage:
-            "linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px)",
+            "linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px)",
           backgroundSize: "40px 40px",
         }}
       />
-
-      {/* Subtle dark vignette — no colored blobs */}
-      <div className="absolute inset-0 pointer-events-none" style={{ background: 'radial-gradient(ellipse 80% 60% at 50% 0%, rgba(255,255,255,0.03) 0%, transparent 70%)' }} />
 
       {/* Content */}
       <div className="relative z-10 max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-12 md:gap-8 pt-12 pb-16">
@@ -51,7 +55,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-lg text-gray-400 max-w-xl mb-10 leading-relaxed"
+            className="text-lg text-gray-300 max-w-xl mb-10 leading-relaxed"
           >
             Rate concerts, DJ sets, festivals, and raves. Build a record of
             every show you&apos;ve been to — organized, shareable, yours.
@@ -80,15 +84,26 @@ export default function Hero() {
             </Link>
           </motion.div>
 
-          {/* Stats */}
-          <motion.p
+          {/* Stats pills */}
+          <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.4 }}
-            className="text-sm text-gray-600"
+            className="flex flex-wrap items-center justify-center md:justify-start gap-2"
           >
-            {statsLine}
-          </motion.p>
+            <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-white px-3 py-1.5 rounded-full border border-[#00D9FF]/40 bg-[#00D9FF]/10">
+              <span className="w-2 h-2 rounded-full bg-[#00D9FF] shadow-[0_0_8px_#00D9FF]" />
+              Free Forever
+            </span>
+            {pills.map((p) => (
+              <span
+                key={p}
+                className="text-sm text-gray-300 px-3 py-1.5 rounded-full border border-white/10 bg-white/[0.04]"
+              >
+                {p}
+              </span>
+            ))}
+          </motion.div>
         </div>
 
         {/* Right: product screenshots */}
