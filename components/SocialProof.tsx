@@ -6,26 +6,25 @@ import { useStats, fmtStat } from "@/lib/useStats";
 const testimonials = [
   {
     quote:
-      "Finally a place to rate every show I go to — concerts, festivals, club nights, all of it.",
-    handle: "@rave_marta",
-    location: "Berlin",
-    initials: "RM",
+      "Really sick set, only thing that could've been better was the production cause it wasn't main stage. That being said though that allowed me to get pretty close to the stage which was sick.",
+    handle: "@TBONE",
+    reviewed: "on I Hate Models: iii Points",
+    initials: "TB",
     accent: "#00D9FF",
   },
   {
-    quote:
-      "I rated my favorite festival sets and found so many new artists through the community.",
-    handle: "@livemusic_sam",
-    location: "Manchester",
-    initials: "LS",
+    quote: "So amazing, no words. Best set of all time.",
+    handle: "@XR",
+    reviewed: "on I Hate Models presents Disco Inferno",
+    initials: "XR",
     accent: "#FF006E",
   },
   {
     quote:
-      "The rating system is clean and the community is real — whatever live music you're into.",
-    handle: "@tekno_jules",
-    location: "Paris",
-    initials: "TJ",
+      "First Factory Town show for me. Me and the lads at Cleveland Circle Convenience petting the cat.",
+    handle: "@ravemogger",
+    reviewed: "on MAUP — Baddest Behavior",
+    initials: "RM",
     accent: "#00D9FF",
   },
 ];
@@ -43,7 +42,7 @@ export default function SocialProof() {
     : [];
 
   return (
-    <section className="py-24 px-4 sm:px-6 max-w-7xl mx-auto">
+    <section className="py-16 px-4 sm:px-6 max-w-7xl mx-auto">
       {/* Stats */}
       {boxes.length > 0 && (
         <motion.div
@@ -51,7 +50,7 @@ export default function SocialProof() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-20"
+          className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-14"
         >
           {boxes.map((stat, i) => (
             <motion.div
@@ -84,7 +83,7 @@ export default function SocialProof() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
-        className="text-center mb-12"
+        className="text-center mb-8"
       >
         <h2 className="text-2xl md:text-4xl font-semibold tracking-normal text-white mb-4">
           From the community
@@ -116,7 +115,7 @@ export default function SocialProof() {
               </div>
               <div>
                 <p className="text-white text-sm font-semibold">{t.handle}</p>
-                <p className="text-gray-500 text-xs">{t.location}</p>
+                <p className="text-gray-500 text-xs">{t.reviewed}</p>
               </div>
             </div>
           </motion.div>
