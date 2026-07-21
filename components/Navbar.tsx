@@ -2,8 +2,10 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import InstagramIcon from "./InstagramIcon";
 
 const APP_URL = "https://decked-frontend.onrender.com";
+const INSTAGRAM_URL = "https://www.instagram.com/deckd.app/";
 
 function Logo() {
   return (
@@ -45,6 +47,15 @@ export default function Navbar() {
         </Link>
 
         <div className="flex items-center gap-4">
+          <Link
+            href={INSTAGRAM_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="DECK'D on Instagram"
+            className="text-gray-400 hover:text-[#FF006E] transition-colors"
+          >
+            <InstagramIcon className="w-5 h-5" />
+          </Link>
           <Link
             href={APP_URL}
             className="hidden sm:block text-sm text-gray-400 hover:text-white transition-colors"

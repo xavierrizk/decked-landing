@@ -1,7 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import { Globe, Share2 } from "lucide-react";
+import { Share2 } from "lucide-react";
+import InstagramIcon from "./InstagramIcon";
+
+const INSTAGRAM_URL = "https://www.instagram.com/deckd.app/";
 
 const APP_URL = "https://decked-frontend.onrender.com";
 
@@ -110,11 +113,13 @@ export default function Footer() {
 
             <div className="flex items-center gap-4">
               <Link
-                href="#"
-                className="text-gray-500 hover:text-[#00D9FF] transition-colors"
+                href={INSTAGRAM_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-500 hover:text-[#FF006E] transition-colors"
                 aria-label="Instagram"
               >
-                <Globe className="w-5 h-5" />
+                <InstagramIcon className="w-5 h-5" />
               </Link>
               <Link
                 href="#"
